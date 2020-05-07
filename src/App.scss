@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+$main-clr: #acb7ae;
+$second-clr: #82716e;
+$third-clr: #e1e8f0;
+$forth-clr: #c2b490;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-clr;  
+  font-family: 'Oxygen', sans-serif;
+
+  .calculator {
+    width: 18em;
+    height: 20em; 
+    padding: .25em;
+    border: 2px solid $second-clr;
+    border-radius: 5px;
+
+      #display {
+        height: 25%;
+        background-color: $third-clr;
+        padding-top: .5em;
+  
+        .input-display {
+          height: 85%;
+          padding-right: 1em;
+          border-bottom: 1px solid $second-clr;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+      }
+
+      .input-history {
+        height: 15%;
+        padding-right: 1.2em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }       
+  
+      .pad {
+        height: 75%;    
+  
+        .top-row {
+          height: 20%;
+
+          button:first-child{
+            width: 75%;
+          }
+        }
+  
+        .middle-row {
+          height: 60%;
+  
+          .middle-row-top, .middle-row-center, .middle-row-bottom {
+            height: 33.33%;
+          }
+        }
+
+        .bottom-row {
+          height: 20%;
+
+          button:first-child{
+            width: 50%;
+          }
+
+          button {
+            width: 33,3%;            
+          }
+        }
+    }
+
+    button {
+      width: 25%;
+      height: 100%;
+      background-color: $forth-clr;      
+      outline: none;
+      border: none;
+      color: #ffffff;      
+      font-size: .9em;   
+
+      &:hover {
+        background-color: $third-clr;
+        color: $second-clr;
+      }
+    }
+  }
+  
+  .code {
+    a {
+      text-decoration: none;
+      font-size: .75em;
+      font-weight: bold;
+      color: $second-clr;
+    }
+  }
+}
