@@ -158,7 +158,7 @@ const App = () => {
         </div>      
       </div>  
       <div className="code">
-      <a href="https://fm-javascript-calculator.netlify.app" target="_blank" rel="noopener noreferrer">code is available here</a>
+      <a href="https://github.com/FilipeMts/FCC-JavaScript-Calculator" target="_blank" rel="noopener noreferrer">code is available here</a>
     </div>    
     </div>
   );
